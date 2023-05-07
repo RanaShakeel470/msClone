@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Microsoft - Official Home Page</title>
+  <link rel="stylesheet" href="/assets/index.9f1367af.css">
+</head>
+
+<body class="">
+    <header class="lg:mx-[60px]">
+        
+        <nav class="flex justify-between  py-3 h-12 px-3">
+            <div class="flex-col space-x-2 md:hidden">
+                <div class="flex space-x-3">
+                    <svg xmlns="/http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-slate-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2" id="hamburger-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <div class="">
+                        <svg xmlns="/http://www.w3.org/2000/svg" class="h-6 w-6 search-icon hover:text-slate-600" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2" id="search-icon1">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <div class="absolute font-extralight  text-sm rounded-md bg-white px-1  border  hidden search-tooltip" id="search-tooltip1">
+                            Search Microsoft.com
+                        </div>
+                    </div>
+                </div>
+                <!-- hamburger-menu -->
+                <div class=" px-8 absolute w-[90%] mt-2 hidden flex-col rounded-md space-y-4 bg-slate-200 py-7 " id="hamburger-menu">
+                    <li class="list-none hover:bg-slate-300 py-3 pl-3 cursor-pointer rounded-md">Microsoft 365</li>
+                    <li class="list-none hover:bg-slate-300 py-3 pl-3 cursor-pointer rounded-md">Office</li>
+                    <li class="list-none hover:bg-slate-300 py-3 pl-3 cursor-pointer rounded-md">Windows</li>
+                    <li class="list-none hover:bg-slate-300 py-3 pl-3 cursor-pointer rounded-md">Support</li>
+                </div>
+            </div>
+            <div class="md:order-1 flex space-x-3">
+                <div class="hover:cursor-pointer">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAAAuCAYAAABK69fpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTAwQkM2Mzk4NDBBMTFFNjhDQkVCOTdDMjE1NkM3RkQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTAwQkM2Mzg4NDBBMTFFNjhDQkVCOTdDMjE1NkM3RkQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMkM5MzFBNDcwQTExMUU2QUVERkExNDU3ODU1M0I3QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMkM5MzFBNTcwQTExMUU2QUVERkExNDU3ODU1M0I3QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgQJy/MAAAxESURBVHja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" class="h-6 w-25">
+                </div>
+                <div class="hidden md:flex space-x-5 px-2  ">
+                    <div class="pb-0 hover:border-b-2 hover:border-black hover:cursor-pointer">
+                        <li class="list-none">Microsoft 365</li>
+                    </div>
+                    <div class="pb-0 hover:border-b-2 hover:border-black hover:cursor-pointer">
+                        <li class="list-none">Office</li>
+                    </div>
+                    <div class="pb-0 hover:border-b-2 hover:border-black hover:cursor-pointer">
+                        <li class="list-none">Windows</li>
+                    </div>
+                    <div class="pb-0 hover:border-b-2 hover:border-black hover:cursor-pointer">
+                        <li class="list-none">Support</li>
+                    </div>
+                </div>
+            </div>
+            <div class="flex space-x-4 md:order-3">
+                <div class=" hover:cursor-pointer hidden md:flex" id="menu-button">
+                    <div class="hover:border-b-2 hover:border-black hover:cursor-pointer">All Microsoft</div>
+                    <svg xmlns="/http://www.w3.org/2000/svg" class="transform origin-center   transition duration-300 h-5 w-5 mt-[0.175rem] hover:text-slate-600"
+                        viewBox="0 0 20 20" fill="currentColor" id="rotate-icon">
+                        <path fill-rule="evenodd"
+                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class=" px-8 absolute left-24 top-14 w-[80%]  items-center hidden flex-col rounded-md space-y-4 bg-slate-300 py-7 " id="hamburger-menu2">
+                    <li class="list-none hover:bg-slate-200 hover:underline py-3 pl-3 cursor-pointer rounded-md">Microsoft 365</li>
+                    <li class="list-none hover:bg-slate-200 hover:underline py-3 pl-3 cursor-pointer rounded-md">Office</li>
+                    <li class="list-none hover:bg-slate-200 hover:underline py-3 pl-3 cursor-pointer rounded-md">Windows</li>
+                    <li class="list-none hover:bg-slate-200 hover:underline py-3 pl-3 cursor-pointer rounded-md">Support</li>
+                </div>
+
+                <!-- search icon -->
+                <div class="hidden md:block ">
+                    <svg xmlns="/http://www.w3.org/2000/svg" class="search-icon2 h-6 w-6 hover:text-slate-600 hover:cursor-pointer"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" id="search-icon2" >
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <div id="search-tooltip2" class="absolute font-light border-opacity-40 text-sm rounded-md bg-white px-1 right-40 border border-black  hidden search-tooltip2" >
+                        Search Microsoft.com
+                    </div>
+                </div>
+                <!-- cart icon -->
+                <div class="cart">
+                    <svg xmlns="/http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-slate-600 hover:cursor-pointer"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" id="cart-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <div id="cart-tooltip" class=" absolute border-opacity-40 font-light border-black text-xs md:text-sm rounded-md bg-white px-1  border  hidden search-tooltip2" >
+                        0 items in shoppping cart                   </div>
+                    
+                </div>
+                <!-- account icon -->
+                <div class="account">
+                    <svg xmlns="/http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-slate-600 hover:cursor-pointer"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+    
+            </div>
+        </nav>
+    </header>
+    <section class="lg:mx-[60px]">
+        
+        <!-- first corousel -->
+        <section class="flex bg-[#f2f2f2] flex-col-reverse md:flex-row cursor-pointer mb-11 pb-3">
+            <div class=" flex flex-col md:justify-center md:mx-20 md:w-[40rem] bg-slate-[#f2f2f2] ">
+                <div class="text-3xl md:text-4xl flex md:justify-start justify-center mb-3">Microsoft 365</div>
+                <div class="md:w-[30rem] text-center md:text-left">Premium Office apps, extra cloud storage, advanced
+                    security,
+                    and more – all in one convenient subscription</div>
+                <div class="flex-col md:flex-row justify-center items-center space-y-6 md:space-x-7 ">
+                    <div class="flex justify-center md:justify-start md:inline-flex ">
+                        <button
+                            class="group h-11 md:w-[11.5rem] hover:bg-slate-800 font-semibold md:inline-flex flex justify-center items-center text-center  text-white bg-black md:p-2 px-2 md:pl-3 mt-6 md:items-start md:justify-start">
+                            <div class=" group-hover:duration-200 duration-200 transition group-hover:-translate-x-1">
+                                <span class="group-hover:border-b-2 hover:border-white pb-1">
+
+                                    For up to 6 people
+                                </span>
+                            </div>
+                            <svg xmlns="/http://www.w3.org/2000/svg" class="h-5 w-5 text-white mt-[0.175rem]  group-hover:duration-200 duration-200 transition group-hover:translate-x-1"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+    
+                    <div class="group  md:inline-flex flex justify-center hover:space-x-[0.25rem]">
+    
+                        <div class="font-semibold group-hover:border-b-2 group-hover:border-black">For 1 Person</div>
+                        <svg xmlns="/http://www.w3.org/2000/svg" class="h-5 w-5 mt-[0.175rem] group-hover:ml-2 duration-200" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+    
+            </div>
+            <div class=" flex justify-center items-center md:justify-items-end md:w-[50rem] bg-[#f2f2f2] ">
+                <img src="/assets/Capture.31e269b6.PNG" class="md:w-full md:h-96 py-2 h-56 w-96">
+            </div>
+        </section>
+        <!-- first flex -->
+        <section class="flex  flex-col md:flex-row justify-between ">
+            <div class="flex-col space-y-8 md:w-72 justify-center inline-flex  hover:brightness-90">
+                <div class="flex justify-center"><img src="/assets/1.4b2d8a81.PNG"></div>
+                <div class="">
+                    <div class="text-xl font-semibold flex justify-center">Designed for life today – and tomorrow</div>
+                    <div class="flex justify-center">
+                        The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you
+                        closer to everything you love.
+                    </div>
+                    <div class="flex hover:space-x-1 mt-5 justify-center md:justify-start">
+                        <div><a href="#" class="text-blue-800 font-semibold hover:border-b-2 hover:border-blue-800 ">See if
+                                your PC is ready</a> </div>
+                        <svg xmlns="/http://www.w3.org/2000/svg" class="h-5 w-5  mt-[0.175rem] text-blue-800 "
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-col space-y-8 md:w-72 inline-flex  hover:brightness-90">
+                <div class="flex justify-center"><img src="/assets/2.7f104de1.PNG"></div>
+                <div class="">
+                    <div class="text-xl font-semibold flex justify-center md:justify-start">Microsoft Edge</div>
+                    <div class="flex justify-center md:justify-start">
+                        World-class performance with more privacy, more productivity and more value while you browse.
+                    </div>
+                    <div class="flex hover:space-x-1 mt-5  justify-center md:justify-start">
+                        <div class=""><a href="#" class="text-blue-800 font-semibold hover:border-b-2 hover:border-blue-800 ">Download now</a> </div>
+                        <svg xmlns="/http://www.w3.org/2000/svg" class="h-5 w-5  mt-[0.175rem] text-blue-800 "
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-col space-y-8 md:w-72 inline-flex  hover:brightness-90">
+                <div class="flex justify-center"><img src="/assets/3.7ec50e3f.PNG"></div>
+                <div class="">
+                    <div class="text-xl font-semibold flex justify-center md:justify-start">Microsoft OneDrive</div>
+                    <div class="flex justify-center md:justify-start">
+                        Save your files and photos to OneDrive and access them from any device, anywhere.
+                    </div>
+                    <div class="flex hover:space-x-1 mt-5 justify-center md:justify-start">
+                        <div><a href="#" class="text-blue-800 font-semibold hover:border-b-2 hover:border-blue-800">Learn more</a> </div>
+                        <svg xmlns="/http://www.w3.org/2000/svg" class="h-5 w-5  mt-[0.175rem] text-blue-800 "
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-col space-y-8 md:w-72 inline-flex hover:brightness-90">
+                <div class="flex justify-center"><img src="/assets/4.32fa5d1c.PNG"></div>
+                <div class="">
+                    <div class="text-xl font-semibold flex justify-center md:justify-start">OneNote</div>
+                    <div class="flex justify-center md:justify-start">
+                        Organize your notes and life.
+                    </div>
+                    <div class="flex hover:space-x-1 mt-5 justify-center md:justify-start">
+                        <div><a href="#" class="text-blue-800 font-semibold hover:border-b-2 hover:border-blue-800">Learn more</a> </div>
+                        <svg xmlns="/http://www.w3.org/2000/svg" class="h-5 w-5  mt-[0.175rem] text-blue-800 "
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- second corousel -->
+        <section class="flex bg-[#e7e7e7] flex-col-reverse md:flex-row cursor-pointer mb-11 mt-3 pb-3">
+            <div class=" flex flex-col md:justify-center md:mx-20 md:w-[40rem] bg-slate-[#e7e7e7] ">
+                <div class="text-3xl md:text-4xl flex md:justify-start justify-center mb-3">Outlook for iOS and Android</div>
+                <div class="md:w-[30rem] text-center md:text-left">Connect. Organise. Get things done.
+                  </div>
+                <div class="flex-col md:flex-row justify-center items-center space-y-6 md:space-x-7 ">
+                    <div class="flex justify-center md:justify-start md:inline-flex">
+                        <button
+                            class=" hover:space-x-[0.25rem] h-11 md:w-[10rem] hover:bg-slate-800 font-semibold md:inline-flex flex justify-center items-center text-center md:pl-3 text-white bg-black md:p-2 pl-1 pb-1 mt-6 md:items-start md:justify-start">
+                            <div class="hover:border-b-2 hover:border-white ">
+                               Download now
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white mt-[0.175rem] "
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+    
+            </div>
+            <div class=" flex justify-center items-center md:justify-items-end md:w-[50rem] bg-[#e7e7e7] ">
+                <img src="/assets/2crousel.46d18dea.PNG" class="md:w-full md:h-96 py-2 h-56 w-96">
+            </div>
+        </section>
+        <div class="text-2xl font-bold mb-5 block">For Business</div>
+        <!-- second flex -->
+        <section class="flex  flex-col md:flex-row justify-between mb-12">
+            <div class="flex-col space-y-8 md:w-72 inline-flex hover:brightness-90">
+                <div class="flex justify-center md:h-[155px]"><img src="/assets/1.1.2ccdb730.PNG"></div>
+                <div class="">
+                    <div class="text-xl font-semibold flex justify-center md:justify-start">Get Microsoft Teams for free</div>
+                    <div class="flex justify-center md:justify-start">
+                        Online meetings, chat and shared cloud storage – all in one place.
+                    </div>
+                    <div class="flex hover:space-x-1 mt-5  justify-center md:justify-start">
+                        <div class=""><a href="#" class="text-blue-800 font-semibold hover:border-b-2 hover:border-blue-800 ">Sign up for free</a> </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  mt-[0.175rem] text-blue-800 "
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="flex-col space-y-8 md:w-72 inline-flex  hover:brightness-90">
+                <div class="flex justify-center"><img src="/assets/1.2.c2817537.PNG"></div>
+                <div class="">
+                    <div class="text-xl font-semibold flex justify-center md:justify-start">Microsoft 365 for business</div>
+                    <div class="flex justify-center md:justify-start">
+                        Stay a step ahead with powerful apps for productivity, connection and security.
+                    </div>
+                    <div class="flex hover:space-x-1 mt-5  justify-center md:justify-start">
+                        <div class=""><a href="#" class="text-blue-800 font-semibold hover:border-b-2 hover:border-blue-800 ">Shop now</a> </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  mt-[0.175rem] text-blue-800 "
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-col space-y-8 md:w-72 inline-flex  hover:brightness-90">
+                <div class="flex justify-center"><img src="/assets/1.3.b9dedc82.PNG"></div>
+                <div class="">
+                    <div class="text-xl font-semibold flex justify-center md:justify-start">Microsoft Viva</div>
+                    <div class="flex justify-center md:justify-start">
+                        Discover the new employee experience platform designed to help people connect, focus, learn and thrive at work.
+                    </div>
+                    <div class="flex hover:space-x-1 mt-5 justify-center md:justify-start">
+                        <div><a href="#" class="text-blue-800 font-semibold hover:border-b-2 hover:border-blue-800">Learn more</a> </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  mt-[0.175rem] text-blue-800 "
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-col space-y-8 md:w-72 inline-flex hover:brightness-90">
+                <div class="flex justify-center"><img src="/assets/1.4.3a5bb5bf.PNG"></div>
+                <div class="">
+                    <div class="text-xl font-semibold flex justify-center md:justify-start">Welcome to your Windows 365 Cloud PC</div>
+                    <div class="flex justify-center md:justify-start">
+                        Securely stream your Windows experience from the Microsoft cloud to any device.
+                    </div>
+                    <div class="flex hover:space-x-1 mt-5 justify-center md:justify-start">
+                        <div><a href="#" class="text-blue-800 font-semibold hover:border-b-2 hover:border-blue-800">Get it today</a> </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  mt-[0.175rem] text-blue-800 "
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Social Follow Section -->
+        <div class="flex space-x-4 mb-12">
+            <div class="pt-1">Follow Microsoft</div>
+            <div class=""><a href="#"></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKtJREFUeNpidIpdxUBLwMRAYzBqAUHAQoYeHi5WZXkBCPvi9ddUs8DaWDo+UEtZTgBZ0DluNXUs0NcUbcq3omEcZEcb0DYOkEPmy7ffXbNPHz37lFap6O6jD0SaPjiSKTB6MZMpRPDL199A3+DXzkiwsNu7KBSX1MUbr4vaDtAwiF68/krbOHj55hsV4gCSV5EDipiQGS2uRy0YtWAwVvoE697ROBjBFgAEGAC6QDLjr6sITQAAAABJRU5ErkJggg==" class="hover:cursor-pointer hover:brightness-90" id="facebook-icon">
+            <div class="hidden absolute border-slate-600 border text-slate-600 rounded-sm font-thin text-sm mt-1 px-1 bg-slate-200" id="facebook-tooltip">
+                Follow Microsoft on Facebook,opens in a new tab
+            </div>
+            </div>
+            <div class=""><a href="#"></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbZJREFUeNrsVj1PwlAU5aMFFA0udWCBQQdxFRMXZVXn/gmdncVZV5ndccZVWUhEB02AQQddOlhjNNDatFg82KQxj77X1yad4KZDad87591z7r1UkC8/YlFGIhZxzAimgEAIsUeaT8iluXJezIrxl8+fxrNx/Wri+bo0RuuoQx+C893caWuAnZ7oxaXk8fYioN2fBxvZcj4FVtwfXn35SIR1uADhHGcyjrYWXHQ3kA3Qu+pwfzXjQ7CcHT8BBDigA/EWrKCnSVeShI5q+XjwX0F5LVMppOrd77ZiadboD0KkoWPBWWtAGODtARwDrqsYJMYN0u+8D4u5JI1At0aT6N4EWIrjEEIj/ZLEKjlVs3nLdG8lHW2jdb0y9Q0IyEtw8ag7lgaKtmLyEqDFTpr9QHmouk1rTO+iRmeyLSWTftCDDbvGk4FDcaIjVzRKMAJ4UL3hUgkrMbjCjGtkUG32a3caGx1usStCoA1kjJ1KIc1wAq7W7jWat1QCDDg02uS8JKLeM+ATTzWTBBht2LlTSG16FRJcuVVMWMpfAnH2hxe0cgb4m2bzgwb4ywRoONzZZ8s0EfwKMACpfMZvJJSkJgAAAABJRU5ErkJggg==" class="hover:cursor-pointer hover:brightness-90" id="twitter-icon">
+                <div class="hidden absolute border-slate-600 border text-slate-600 rounded-sm font-thin text-sm mt-1 px-1 bg-slate-200" id="twitter-tooltip">
+                    Follow Microsoft on Twitter,opens in a new tab
+                </div>
+            </div>
+            <div class=""><a href="#"></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNpiZCzfykBLwMRAYzBqwcBbwIIpFG8s0++rKcDB+uD996DFZy88+0RlH0BMBzIUBDnnhepRP4ggpkOAgSQf9S0AhgycvfHaS+pbAAr356BwP3jvXeLqSxRawEjrooKFPG31LqrAxAZMBUD2hx+/N159Wbjl+ofvv4nywb8OL0QIVmzDFAQGnb2SEJouYKg6zTqJaQc5GQ3TdEh6y7dWoG1O9tcWp44FwEAHpi6hxt2Bi88C2fgzDTkWTDzyYOHZJ8DgBsXt5uvUL+yAkQxnP0TKlVSz4MH7b1jZVLTgO1b2aI02Ui1gHG3ZjVpAMQAIMAAERWNeDhB8gQAAAABJRU5ErkJggg==" class="hover:cursor-pointer hover:brightness-90" id="linkedin-icon">
+                <div class="hidden absolute border-slate-600 border text-slate-600 rounded-sm font-thin text-sm mt-1 px-1 bg-slate-200" id="linkedin-tooltip">
+                    Follow Microsoft on LinkedIn,opens in a new tab
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- link section -->
+    <footer class="bg-[#f2f2f2] md:flex-row flex-col  md:space-x-12 space-y-6 md:space-y-0 pt-9 pl-16 text-slate-700">
+       <span class="block md:inline">
+        <div class=" flex-col space-y-4 inline-flex ">
+            <div class="font-semibold inline-flex">Microsoft Store</div>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Account profile</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Download Center</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Returns</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Order tracking</a>
+        </div>
+       </span>
+       <span class="block md:inline">
+        <div class="inline-flex flex-col space-y-4 ">
+            <div class="font-semibold">Education</div>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit ">Microsoft in education</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Devices for education</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Microsoft Teams for Education</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Microsoft 365 Education</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Office Education</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Educator training and development</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Deals for students and parents</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Azure for students</a>
+        </div>
+       </span>
+       <span class="block md:inline">
+        <div class="inline-flex flex-col space-y-4 ">
+            <div class="font-semibold">Business</div>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit ">Microsoft Cloud</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Microsoft Security</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Azure</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Dynamics 365</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Microsoft 365</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Microsoft Advertising</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Microsoft Industry</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Microsoft Teams</a>
+        </div>
+       </span>
+       <span class="block md:inline">
+        <div class="inline-flex flex-col space-y-4 ">
+            <div class="font-semibold">Developer & IT</div>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit ">Developer Center</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Documentation</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Microsoft Learn</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Microsoft Tech Community</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Azure Marketplace</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">AppSource</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Microsoft Power Platform</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Visual Studio</a>
+        </div>
+       </span>
+       <span class="block md:inline">
+        <div class="inline-flex flex-col space-y-4 ">
+            <div class="font-semibold">Company</div>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit ">Careers</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">About Microsoft</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Company news</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Privacy at Microsoft</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Investors</a>
+            <a href="#" class="text-xs hover:text-black hover:underline w-fit">Sustainability</a>
+        </div>
+       </span>
+       <span class="block">
+        <div class=" flex-col md:flex-row inline-flex justify-between md:pr-16  mt-9 pb-8">
+            <div class="text-xs hover:text-black hover:underline w-fit flex">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                  English(Pakistan)
+            </div>
+            <div class="md:space-x-6 space-x-2 inline-flex md:ml-96">
+
+                <a href="#" class="text-xs hover:text-black hover:underline w-fit ">Contact Microsoft</a>
+                <a href="#" class="text-xs hover:text-black hover:underline w-fit">Privacyt</a>
+                <a href="#" class="text-xs hover:text-black hover:underline w-fit">Terms of use</a>
+                <a href="#" class="text-xs hover:text-black hover:underline w-fit">Tredemarks</a>
+                <a href="#" class="text-xs hover:text-black hover:underline w-fit">About our ads</a>
+                <a href="#" class="text-xs hover:text-black hover:underline w-fit inline-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd" />
+                      </svg>
+                     <div class="pb-3"> Microsoft 2022</div>
+                </a>
+            </div>
+        </div>
+       </span>
+    </footer>
+   
+    <script>
+        window.addEventListener('DOMContentLoaded',
+        () =>{
+            const search_icon2 = document.querySelector('#search-icon2');
+            const search_tooltip2 = document.querySelector('#search-tooltip2');
+            const cart_icon = document.querySelector('#cart-icon');
+            const cart_tooltip = document.querySelector('#cart-tooltip');
+            const hamburger_icon = document.querySelector('#hamburger-icon');
+            const hamburger_menu = document.querySelector('#hamburger-menu');
+            const search_icon1 = document.querySelector('#search-icon1');
+            const search_tooltip1 = document.querySelector('#search-tooltip1');
+            const menu_button = document.querySelector('#menu-button');
+            const hamburger_menu2 = document.querySelector('#hamburger-menu2');
+            const facebook_icon = document.querySelector('#facebook-icon');
+            const facebook_tooltip = document.querySelector('#facebook-tooltip');
+            const twitter_icon = document.querySelector('#twitter-icon');
+            const twitter_tooltip = document.querySelector('#twitter-tooltip');
+            const linkedin_icon = document.querySelector('#linkedin-icon');
+            const linkedin_tooltip = document.querySelector('#linkedin-tooltip');
+            const rotate_button = document.querySelector('#rotate-icon');
+            search_icon2.addEventListener('mouseenter',
+            () =>{
+                search_tooltip2.classList.add("flex")
+                search_tooltip2.classList.remove("hidden")
+                console.log('hgfhgf')
+            })
+
+            search_icon2.addEventListener('mouseleave',
+            () =>{
+                search_tooltip2.classList.add("hidden")
+            })
+            search_icon1.addEventListener('mouseenter',
+            () =>{
+                search_tooltip1.classList.add("flex")
+                search_tooltip1.classList.remove("hidden")
+                console.log('hgfhgf')
+            })
+
+            search_icon1.addEventListener('mouseleave',
+            () =>{
+                search_tooltip1.classList.add("hidden")
+            })
+            cart_icon.addEventListener('mouseenter',
+            () =>{
+                cart_tooltip.classList.add("flex")
+                cart_tooltip.classList.remove("hidden")
+                console.log('hgfhgf')
+            })
+
+            cart_icon.addEventListener('mouseleave',
+            () =>{
+                cart_tooltip.classList.add("hidden")
+            })
+            hamburger_icon.addEventListener('click',
+            () => {
+                hamburger_menu.classList.toggle("hidden");
+            })
+            menu_button.addEventListener('click',
+            () => {
+                hamburger_menu2.classList.toggle("hidden");
+                console.log('clicked')
+            })
+            facebook_icon.addEventListener('mouseenter',
+            () =>{
+                facebook_tooltip.classList.add("flex");
+                facebook_tooltip.classList.remove("hidden");
+            })
+            facebook_icon.addEventListener('mouseleave',
+            ()=>{
+                facebook_tooltip.classList.add("hidden");
+                facebook_tooltip.classList.remove("flex")
+            })
+            twitter_icon.addEventListener('mouseenter',
+            ()=>{
+                twitter_tooltip.classList.add("flex");
+                twitter_tooltip.classList.remove("hidden");
+            })
+            twitter_icon.addEventListener('mouseleave',
+            ()=>{
+                twitter_tooltip.classList.remove("flex");
+                twitter_tooltip.classList.add("hidden");
+            })
+            linkedin_icon.addEventListener('mouseenter',
+            ()=>{
+                linkedin_tooltip.classList.add("flex");
+                linkedin_tooltip.classList.remove("hidden");
+            })
+            linkedin_icon.addEventListener('mouseleave',
+            ()=>{
+                linkedin_tooltip.classList.remove("flex");
+                linkedin_tooltip.classList.add("hidden");
+            })
+            menu_button.addEventListener('click',
+            () => {
+                rotate_button.classList.toggle("rotate-90");
+                console.log('clicked')
+            })
+
+            
+           
+           
+               
+           
+        })
+    </script>
+</body>
+
+</html>
